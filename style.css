@@ -51,10 +51,15 @@ body.wrong {
 .start-btn, .next-btn {
     font-weight: bold;
     padding: 10px 20px;
+    background-color: aqua;
 }
 
 .controls {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.hide {
+display: none;
 }
