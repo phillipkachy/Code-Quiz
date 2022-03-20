@@ -1,0 +1,60 @@
+:root {
+    --hue-neutral: 200;
+    --hue-wrong: 0;
+    --hue-correct: 145;
+}
+
+body {
+    --hue: var(--hue-neutral);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+body.correct {
+    --hue: var(--hue-correct);
+}
+
+body.wrong {
+    --hue: var(--hue-wrong);
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn-grid {
+    display: grid;
+    gap: 10px;
+}
+
+.btn {
+    --hue: var(--hue-neutral);
+}
+
+.btn.correct {
+    --hue: var(--hue-correct);
+}
+
+.btn.correct {
+    --hue: var(--hue-wrong);
+}
+
+.start-btn, .next-btn {
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
